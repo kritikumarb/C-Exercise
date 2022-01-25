@@ -20,7 +20,7 @@ void main()
         }
     }
     for(i=0;i<n;i++){
-        printf("%d",number[i]);
+        printf("%d\t",number[i]);
     }
     printf("\nSecond Largest : %d \nSecond Smallest : %d",number[1],number[n-2]);
 

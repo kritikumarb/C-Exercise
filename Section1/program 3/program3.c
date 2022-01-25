@@ -15,8 +15,8 @@ scanf("%d",&science);
 printf("History : ");
 scanf("%d",&history);
 
-int per = (math+english+odia+science+history)/5;
-printf("You Got %d percentage\n",per);
+float per = (math+english+odia+science+history)/5.0;
+printf("You Got %f percentage\n",per);
 
 /*show pass or fail*/
 if(per>=70){
@@ -31,11 +31,5 @@ printf("You got 3rd division");
 else {
 printf("You are failed.");
 }
-
-
-
-
-
-
     return 0;
 }
