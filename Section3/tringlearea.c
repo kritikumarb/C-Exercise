@@ -3,8 +3,8 @@
 #include<math.h>
 void main()
 { 
-    int side1 , side2 , side3, s;
-    float area;
+    int side1 , side2 , side3;
+    float area,s;
     printf("Enter 3 sides of the tringle : \n");
     scanf("%d %d %d",&side1,&side2,&side3);
     s = (side1 +  side2 + side3)/2;

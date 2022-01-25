@@ -5,16 +5,16 @@ void main()
 { 
     typedef int integer;
     typedef float decimal;
-    integer p,t,r;
+    decimal p,t,r;
     decimal si,ci;
     printf("Enter the principal value : ");
-    scanf("%d",&p);
+    scanf("%f",&p);
     printf("Enter time(year) : ");
-    scanf("%d",&t);
+    scanf("%f",&t);
     printf("Enter rate of intrest : ");
-    scanf("%d",&r);
+    scanf("%f",&r);
     si = (p*t*r)/100;
-    ci = p*(pow(1+(r/100),t));
+    ci = p * pow(1+ r/100,t) ;
     printf("Simple intrest : %.2f ",si);
     printf("\nCompound intrest : %.2f ",ci);
 

@@ -7,6 +7,6 @@ scanf("%d",&base);
 printf("Enter height : ");
 scanf("%d",&height);
 float area = 0.5 * base * height;
-printf("The area of tringle is : %d",area);
+printf("The area of tringle is : %.2f",area);
 
 }

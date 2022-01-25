@@ -3,7 +3,8 @@
 #include<math.h>
 void main()
 { 
-    int p,t,r,si,ci;
+    int p,t,r;;
+    float si,ci;
     printf("Enter the principal value : ");
     scanf("%d",&p);
     printf("Enter time(year) : ");
@@ -12,7 +13,7 @@ void main()
     scanf("%d",&r);
     si = (p*t*r)/100;
     ci = p*(pow(1+(r/100),t));
-    printf("Simple intrest : %d ",si);
-    printf("\nCompound intrest : %d ",ci);
+    printf("Simple intrest : %.2f ",si);
+    printf("\nCompound intrest : %.2f ",ci);
 
 }

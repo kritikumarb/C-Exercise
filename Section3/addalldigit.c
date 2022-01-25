@@ -2,17 +2,21 @@
 #include<conio.h>
 void main()
 { 
-    int a, b , c ,d,e, sum ;
+    int a, b , sum ;
     printf("Enter a 4 digit number : ");
     scanf("%d",&a);
     b = a % 10;
     a = a / 10;
-    c = a % 10;
+    sum =0;
+    sum = sum + b;
+    b = a % 10;
     a = a / 10;
-    d = a % 10;
+    sum = sum +b;
+    b = a % 10;
     a = a / 10;
-    e = a % 10;
-    sum = b+c+d+e;898
+    sum = sum + a + b;
+    
+    
     
     printf("Sum of all digits is : %d", sum);
     
