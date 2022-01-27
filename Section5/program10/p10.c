@@ -5,7 +5,7 @@ void main()
     int a , b , fib , c;
     printf("Enter number of fibbonaci you want to print : ");
     scanf("%d",&c);
-    a = 1;
+    a = 0;
     b = 1;
     fib = 0;
     do{
