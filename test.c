@@ -1,30 +1,90 @@
-/*Write a program that takes input, the principal, rate of interest and time and then calculates the simple and compound interest*/
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-#include<stdio.h>
-#include<math.h>
+void number(int x);
 
-
-void main()
+int main()
 {
-    float pr,rate,time,si,comp;
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+  	// Complete the code.
 
-    /*Input of principal amount, rate and time from the user*/
-    printf("Enter the principal amount:\n ");
-    scanf("%f",&pr);
-    printf("Enter the rate:\n ");
-    scanf("%f",&rate);
-    printf("Enter the time period:\n ");
-    scanf("%f",&time);
+    if(a<=9){
+        for(int i=a;i<=9;i++){
+            number(i);
+            even(i);
+            printf("\n");
+            feven(i);
+            printf("\n");
+        }
+    }
+    if(b<=9){
+        for(int i=b;i<=9;i++){
+            number(i);
+               even(i);
+            printf("\n");
+            feven(i);
+            printf("\n");
+        }
+    }
 
-    /*Calculating the simple interest and compound interest*/
 
-    si=(pr*rate*time)/100;
-    comp=pr*(pow((1+rate/100),time));
 
-    /*printing the simple interest and compound interest*/
+    return 0;
+}
+void feven(int x){
+    if(x%2==0){
+        printf("even");
+        printf("\n");
+    }
+    else{
+        printf("odd");
+        printf("\n");
+    }
+}
+void number(int x){
+    if(x==1){
+        printf("one");
+        printf("\n");
+    }
+    if(x==2){
+        printf("two");
+        printf("\n");
+    }
+    if(x==3){
+        printf("three");
+        printf("\n");
+    }
+    if(x==4){
+        printf("four");
+        printf("\n");
+    }
+    if(x==5){
+        printf("five");
+        printf("\n");
+    }
+    if(x==6){
+        printf("six");
+        printf("\n");
+    }
+    if(x==7){
+        printf("seven");
+        printf("\n");
+    }
+    if(x==8){
+        printf("eight");
+        printf("\n");
+    }
 
-    printf("The simple interest for principal amount %.2f, rate %.2f and time %f is %.2f\n",pr,rate,time,si);
-    printf("The compound interest for principal amount %.2f, rate %.2f and time %.2f is %.2f\n",pr,rate,time,comp);
-
+    if(x==0){
+        printf("zero");
+        printf("\n");
+    }
+    if(x==9){
+        printf("nine");
+        printf("\n");
+    }
 
 }

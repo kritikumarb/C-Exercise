@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 int arrA[50];
 int arrB[50];
 int arrC[50];
 int ins;
-
 //function for cdreating and add items into array
 void addItems(int arr[], int len)
 {
