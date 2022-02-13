@@ -9,6 +9,7 @@ void main()
     t = n;
     int a[n];
     int copy[n];
+    int freq[n];
     printf("Enter items into array : ");
     for (i = 0; i < n; i++)
     {
@@ -44,7 +45,7 @@ void main()
         printf("%d  ", copy[i]);
     }
     //compare copy array with real array and store value in another array
-    int freq[n];
+
     for (i = 0; i < n; i++)
     {
         //assign o to all frequencdy values

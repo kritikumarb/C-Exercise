@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 void main()
-{ 
+{
     int n,i,j;
     n = 2;
     printf("Enter the size of square matrix : ");
@@ -16,7 +16,7 @@ void main()
     }
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
-            printf("%d\t",a[i][j]);
+            printf("%5d\t",a[i][j]);
         }
         printf("\n");
     }

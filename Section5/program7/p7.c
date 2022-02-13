@@ -12,20 +12,6 @@ void main()
     }
     printf("%d == %d\n",rev,temp);
     if(rev == temp){
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         printf("%d is a palindrome",temp);
 
     }

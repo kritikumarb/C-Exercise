@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
+#include<math.h>
+
 void main()
 { 
     int a,n , temp , sum=0;
@@ -13,6 +15,7 @@ void main()
         sum = sum+(temp*temp*temp);
 
     }
+    printf("Sum is : %d\n",sum);
     if(n == sum){
         printf("Number is  a armstrong");
 

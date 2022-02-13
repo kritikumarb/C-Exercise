@@ -28,7 +28,7 @@ void main()
         for(j=0;j<n;j++){
             
             if(i*j >= i*i){
-                printf("%d\t",a[i][j]);
+                printf("%5d\t",a[i][j]);
             }
         }
         
