@@ -7,7 +7,7 @@ void main()
     printf("Enter a name : ");
     gets(ch);
     int i=0,c=0;
-    while(ch[i]>0){
+    while(ch[i]!= '\0'){
         c++;
         i++;
     }
