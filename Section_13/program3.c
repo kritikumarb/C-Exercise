@@ -75,6 +75,6 @@
     for(a=0;a<i+j;a++){
         printf("%d\t",*(z+a));
     }
-    
+
     getch();
  }

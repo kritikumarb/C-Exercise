@@ -10,7 +10,7 @@ void main()
     gets(ch);
     printf("Enter second word : ");
     gets(cr);
-    int com = strcmp(ch, cr);
+    int com;
     int i,j;
     for(i=0;i<strlen(ch);i++){
         if(ch[i] == cr[i]){

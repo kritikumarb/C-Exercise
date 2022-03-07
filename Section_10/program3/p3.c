@@ -8,15 +8,16 @@ void main()
     int x,y ;
     printf("Enter Number and power : \n");
     scanf("%d%d",&x,&y);
-    float ans = recursiveFunction(x,y,1);
+    float ans = recursiveFunction(x,y,);
     printf(" = %f",ans);
 }
-float recursiveFunction(int num,int power,int startpower ){
-    printf("%d^%d/factof(%d)*",num,startpower,power);
-    if(power <= startpower){
-        return num;
+float recursiveFunction(int x, ){
+    if(num <=1){
+        return  x;
     }
-    return ((pow(num , startpower)/fact(startpower)) - recursiveFunction(num , power , startpower+2));
+    esle if(num%2==0){
+        return
+    }
 }
 int fact(int a)
 {

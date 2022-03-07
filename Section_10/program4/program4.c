@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
-#define x 100
+#define x 3
 void insertIntoArray(int arr[][x],int m,int n);
 void showMatrix(int arr[][x],int m,int n);
+void transpose(int arr[][x],int m , int n);
 void main()
 {
     int m,n,arr[x][x];
@@ -13,6 +14,10 @@ void main()
     scanf("%d",&n);
     insertIntoArray(arr , m, n);
     showMatrix(arr , m ,n);
+    transpose(arr , m , n);
+    printf("\n\nTranspose of matrix is : \n");
+    showMatrix(arr , m ,n);
+
 }
 void showMatrix(int arr[][x],int m,int n){
     for(int i=0;i<m;i++){
@@ -26,6 +31,17 @@ void insertIntoArray(int arr[][x],int m,int n){
     for(int i=0;i<m;i++){
         for(int j =0;j<n;j++){
             scanf("%d",&arr[i][j]);
+        }
+    }
+}
+void transpose(int arr[][x],int m , int n){
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            if(i<=j){
+                int temp = arr[i][j];
+                arr[i][j] = arr[j][i];
+                arr[j][i] = temp;
+            }
         }
     }
 }
