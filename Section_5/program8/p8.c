@@ -4,16 +4,18 @@
 
 void main()
 { 
-    int a,n , temp , sum=0;
+    int c,a,n , temp , sum=0;
     printf("Enter a number : ");
     scanf("%d",&n);
-
-    a = n;
-    while(a){
-        temp = a%10;
+    a=n;
+    while(a>0){
         a = a/10;
-        sum = sum+(temp*temp*temp);
-
+        c++;
+    }
+    a = n;
+    while(a>0){
+        sum = sum + pow(a%10 , c);
+        a = a/10;
     }
     printf("Sum is : %d\n",sum);
     if(n == sum){

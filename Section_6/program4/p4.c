@@ -6,7 +6,6 @@ void main()
     printf("Enter size of array : ");
     scanf("%d", &n);
     int a[n];
-
     printf("Enter Items into array : \n");
     //To scan items into array
     for (i = 0; i < n; i++)
@@ -33,7 +32,11 @@ void main()
         //increase array size by 1
         if (p < 0 || p > n)
         {
-            printf("\n\nYou have insert an invalid location.");
+            printf("\n\nYou have insert an invalid location.\n");
+            for (i = 0; i < n; i++)
+            {
+                printf("%d\t", a[i]);
+            }
             continue;
         }
         else
