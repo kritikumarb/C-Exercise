@@ -112,8 +112,7 @@ void insertElementEnd(struct node *hea , int x){
 }
 void deleteLast(snode *hea){
     if(hea->next==NULL){
-        free(hea);
-        main();
+        hea = NULL;
         return;
     }
     snode *ptr = hea;
@@ -129,7 +128,7 @@ void deleteLast(snode *hea){
 }
 snode* deleteFirst(struct node *hea){
     if(hea->next == NULL){
-        main();
+        hea = NULL;
         return;
     }
     snode *ptr = hea;
