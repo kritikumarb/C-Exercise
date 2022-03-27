@@ -8,6 +8,7 @@ void main()
     int n, i, j;
     printf("Enter No Of row : ");
     scanf("%d", &n);
+    n = n+1;
     int arr[n][col];
     printf("Enter Size of Matrix : ");
     printf("\nTotal Rows : ");
@@ -27,7 +28,7 @@ void main()
         printf("Number : ");
         scanf("%d", &arr[i][2]);
     }
-    printf("\nEntred Tuple Matrix is : ");
+    printf("\nEntred Tuple Matrix is : \n");
     printf("\nROW\tCOL\tNUM\n");
     for (i = 0; i < n; i++)
     {
@@ -49,17 +50,13 @@ void sparse(int arr[][col], int row)
         }
     }
     printf("\n");
-    for(i=0;i<arr[0][0];i++){
-        for(j=0;j<arr[0][1];j++){
-            printf("%d\t",ar[i][j]);
-        }
-        printf("\n");
-    }
+   
     printf("\n");
     for(i=1;i<row;i++){
         ar[arr[i][0]][arr[i][1]]=arr[i][2];
     }
     printf("\n");
+    printf("Sparse Matrix is : \n\n");
     for(i=0;i<arr[0][0];i++){
         for(j=0;j<arr[0][1];j++){
             printf("%d\t",ar[i][j]);
