@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-#define x 3
+#define x 100
 void insertIntoArray(int arr[][x],int m,int n);
 void showMatrix(int arr[][x],int m,int n);
 void transpose(int arr[][x],int m , int n);

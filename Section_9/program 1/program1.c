@@ -4,18 +4,21 @@ void main()
 {
     int row = 4;
     int col = 5;
-    int arr[row][col];
-    int *p = &arr[0][0];
+    int p[row][col];
     int i;
-    for (i = 0; i < row * col; i++)
+     for (i = 0; i < row; i++)
     {
-        scanf("%d", p + i);
+        for (int x = 0; x < col; x++)
+        {
+            scanf("%d ", *(p + i)+x);
+            
+        }
     }
     for (i = 0; i < row; i++)
     {
         for (int x = 0; x < col; x++)
         {
-            printf("%d ", *(p + x)+i);
+            printf("%d ", *(*(p + i)+x));
             
         }
         printf("\n");

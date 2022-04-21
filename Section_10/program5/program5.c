@@ -22,13 +22,15 @@ void main(){
     int arr[s1][s2];
     int all[s1*s2];
     insertElement(arr , s1 ,s2);
-    show(arr , s1,s2);
+    //show(arr , s1,s2);
     addLinear(arr ,s1,s2, all);
     printf("\n");
-    showLinear(all , (s1*s2));
+    //showLinear(all , (s1*s2));
     printf("\n");
     sort(all , (s1*s2) );
     showLinear(all , (s1*s2));
+    printf("\nLargest : %d\nSecond Largest : %d",all[0],all[1]);
+    printf("\nSmallest : %d\nSecond Smallest : %d",all[s1*s2],all[(s1*s2)-1]);
 }
 void insertElement(int arr[][n],int s1 , int s2){
     int i,j;

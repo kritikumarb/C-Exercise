@@ -1,30 +1,33 @@
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
-int fact(int a);
-float recursiveFunction(int num, int power , int startpower );
-void main()
-{
-    int x,y ;
-    printf("Enter Number and power : \n");
-    scanf("%d%d",&x,&y);
-    float ans = recursiveFunction(x,y,);
-    printf(" = %f",ans);
-}
-float recursiveFunction(int x, ){
-    if(num <=1){
-        return  x;
-    }
-    esle if(num%2==0){
-        return
-    }
-}
-int fact(int a)
-{
-    if(a<2){
-        return a;
+int fact(int a){
+    if(a==1){
+        return 1;
     }
     else{
-        return a*fact(a-1);
+        return (a*fact(a-1));
     }
+}
+float ans(int x , int n , int c , int k/*c is for count*/){
+    /*k = max lngth 
+      c = count for the power 
+      n = */
+    printf("%d / %d! ");
+    if(c>=k){
+        if(n%2==0)
+            return (-1*pow(x,n)/fact(n));
+        return (pow(x,n)/fact(n));
+    }
+    else if(c%2==0){
+        printf(" - ");
+        return ((-1*pow(x,c)/fact(c))+ans(x , n , c+2 , k) );
+    }
+    else if(c%2==1){
+        printf(" + ");
+        return ((pow(x,c))/fact(c) + ans(x , n , c+2 , k));
+    }
+}
+void main(){
+
 }

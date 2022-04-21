@@ -37,7 +37,7 @@ void main()
             {
                 printf("%d\t", a[i]);
             }
-            continue;
+            return;
         }
         else
         {

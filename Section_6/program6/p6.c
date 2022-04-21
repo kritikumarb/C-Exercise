@@ -193,7 +193,7 @@ void main()
             break;
         default:
             printf("Enter a valid Choice.");
-            break;
+            return;
         }
     }
 }

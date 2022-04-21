@@ -9,8 +9,8 @@ void main()
     printf("Write a string : ");
     gets(ch);
     for(i=0;i<strlen(ch);i++){
-        for(j=0;j<strlen(ch);j++){
-            if(ch[i]<ch[j]){
+        for(j=i+1;j<strlen(ch);j++){
+            if(ch[i]>ch[j]){
                 temp = ch[i];
                 ch[i] = ch[j];
                 ch[j] = temp;

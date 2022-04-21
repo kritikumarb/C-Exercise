@@ -1,29 +1,34 @@
-#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
-char* deleteChar(char p[] , char x){
+void fun(char str[100], int n)
+{
 
-    char t[100];
-    char *u=t;
-    int i=0,j=0;
-    while(p[i]!='\0'){
-        if(p[i]!=x){
-            t[j] = p[i];
-            j++;
+    int i, j, k;
+    printf("\nYour entered String is : \n");
+    puts(*(&str));
+
+    for (i = 0; i < n; i++)
+{
+        for (j = i + 1; j < n; j++){
+            if (*(&str[i]) == *(&str[j])){
+                for (k = j; k < n; k++){
+                    *(&str[k]) = *(&str[k + 1]);
+                }
+                n = n - 1;
+                j--;
+            }
         }
-        i++;
     }
-    t[j] = '\0';
-    return u;
+    printf("\nAfter deleting the duplicate character: \n");
+    puts(*(&str));
 }
-void main(){
-    char name[100], ch , *s;
-    printf("Enter Character string : ");
-    scanf("%s",name);
-    printf("Enter the Character you want to delete : ");
-    ch = getche();
-    s = deleteChar(&name , ch);
-    printf("%s", *(s));
+void main()
+{
+    char str[100], ch;
+    int len;
+    printf("Enter the string\n");
+    gets(str);
+    len = strlen(str);
+    fun(str,len);
 }

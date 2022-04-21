@@ -15,8 +15,7 @@ void main()
     scanf("%d", &arr[0][0]);
     printf("Entyer Col : ");
     scanf("%d", &arr[0][1]);
-    printf("Enter Total NonZero : ");
-    scanf("%d", &arr[0][2]);
+    arr[0][2] = n-1;
     printf("\nEnter Matrix In tuple form\n");
 
     for (i = 1; i < n; i++)
@@ -60,6 +59,13 @@ void sparse(int arr[][col], int row)
     for(i=0;i<arr[0][0];i++){
         for(j=0;j<arr[0][1];j++){
             printf("%d\t",ar[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\nTranspose Of matrix is : \n");
+    for(i=0;i<arr[0][1];i++){
+        for(j=0;j<arr[0][0];j++){
+            printf("%d\t",ar[j][i]);
         }
         printf("\n");
     }

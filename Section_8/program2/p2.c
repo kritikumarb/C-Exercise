@@ -15,7 +15,4 @@ void main()
         }
     }
     printf("In the sentence %c is used %d times. ",c,a);
-
-   
-
 }

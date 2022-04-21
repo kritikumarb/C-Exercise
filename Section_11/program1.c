@@ -33,8 +33,9 @@ void main()
         sum = sum + (int)(std[i].sub1 + std[i].sub2 + std[i].sub3);
         printf("Total Marks scored is : %.2f",sum);
     }
-    avg = sum/n;
+    avg = sum/3;
     printf("\nAverage of all marks is : %.2f",avg);
+    
     getch();
 
 }

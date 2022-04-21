@@ -17,5 +17,5 @@ void main()
         c--;
    }
    while(c>=0);
-
+   printf("\b\b");
 }

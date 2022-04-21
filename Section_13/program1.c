@@ -18,7 +18,7 @@
      printf("\n");
      for(int i=0;i<n;i++)
      {
-         printf("\t%d",*(ptr+i));
+         scanf("\t%d",(ptr+i));
          sum = sum+*(ptr+i);
      }
      printf("\nSum : %d \nAverage : %d",sum , sum/n);

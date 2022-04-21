@@ -22,11 +22,7 @@ void main()
         printf("\n");
     }
     for(i=0;i<n;i++){
-        for(j=0;j<n;j++){
-            if(i==j){
-                sum = sum + a[i][j];
-            }
-        }
+        sum = sum + a[i][i];
     }
     printf("\nSum of all the diagonal elements is : %d ",sum);
 }
